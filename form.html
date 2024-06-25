@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>FastCoffe</title>
+    <link rel="icon" href="./assets/LOGO.png" type="image/png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://prolex.themetags.com/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://prolex.themetags.com/css/magnific-popup.css">
+    <link rel="stylesheet" href="https://prolex.themetags.com/css/themify-icons.css">
+    <link rel="stylesheet" href="fonts/flaticon.css">
+    <link rel="stylesheet" href="https://prolex.themetags.com/css/animate.min.css">
+    <link rel="stylesheet" href="https://prolex.themetags.com/css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="https://prolex.themetags.com/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://prolex.themetags.com/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://prolex.themetags.com/css/style.css">
+    <link rel="stylesheet" href="https://prolex.themetags.com/css/responsive.css">
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        #kontak {
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        #kontak h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        #kontak p {
+            margin-bottom: 20px;
+        }
+
+        #kontak ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #kontak li {
+            margin-bottom: 10px;
+        }
+
+        #kontak li strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section Start -->
+    <header class="header">
+        <nav id="nav" class="navbar navbar-expand-lg fixed-top bg-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="./assets/LoGoo.png" width="120" alt="logo" class="img-fluid"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="ti-menu"></span>
+                </button>
+                <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="coba.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="form.html">Form Pesanan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="kontak.html">Kontak Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dropdown-item" href="logout.html" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                            <form id="logout-form" action="logout.html" method="POST" class="d-none">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero-section ptb-100 background-img" style="background: url('assets/SPECIAL.png') no-repeat center center / cover">
+        <div class="container">
+            <div class="row align-items-center justify-content-between py-4">
+                <div class="col-md-7 col-lg-6">
+                    <div class="hero-content-left text-white">
+                        <h1 class="text-white"><font style="color:yellow">Coffe </font>That Inspires</h1>
+                        <p class="lead">Work can wait, smooth out your day, everyday.</p>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-5">
+                    <div class="hero-animation-img">
+                        <img src="assets/LOGO.png" alt="app" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Body Content Wrap Start -->
+    <section class="banner-area">
+        <div class="container">
+            <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+            </div>
+        </div>
+    </section>
+
+    <section class="checkout_area section_gap">
+        <div class="container">
+            <div class="billing_details">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3>Form Pemesanan</h3>
+                        <form class="row contact_form" method="POST" action="frontend/formstore" enctype="multipart/form-data">
+                            <div class="col-md-12 form-group p_star">
+                                <input type="date" class="form-control" name="tanggal" placeholder="Masukkan tanggal">
+                            </div>
+                            <div class="col-md-12 form-group p_star">
+                                <input placeholder="Nama" type="text" class="form-control" name="nama_pemesan">
+                            </div>
+                            <div class="col-md-6 form-group p_star">
+                                <input type="text" placeholder="No Hp" class="form-control" name="no_hp">
+                            </div>
+                            <div class="col-md-6 form-group p_star">
+                                <input placeholder="Email" type="text" class="form-control" name="email">
+                            </div>
+                            <div class="col-md-12 form-group p_star">
+                                <input placeholder="Alamat" type="text" class="form-control" name="alamat_pemesan">
+                            </div>
+                            <div class="col-md-12 form-group p_star">
+                                <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <h3>Pilih Produk Coffe yang ingin dibeli</h3>
+                                <select id="jenis" name="produk_id" class="country_select">
+                                    <!-- Contoh item produk. Tambahkan item lainnya sesuai kebutuhan -->
+                                    <option value="1">Macca Latte</option>
+                                    <option value="2">Expresso</option>
+                                    <option value="3">Cappuccino</option>
+                                    <option value="4">Asian Dolce latte</option>
+                                    <option value="5">Americano</option>
+                                    <option value="6">Caramel</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 form-group p_star">
+                                <input type="text" class="form-control" name="jumlah_pesanan" placeholder="Jumlah Pesanan">
+                            </div>
+                            <div class="col-12">
+                                <a href="sukses.html" class="btn btn-success">Pesan</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Body Content Wrap End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer pt-100">
+        <div class="footer-bottom gray-light-bg pt-4 pb-4">
+            <div class="container">
+                <div class="row text-center justify-content-center">
+                    <div class="col-md-6 col-lg-5"><p class="copyright-text pb-0 mb-0">Copyrights © 2023. All
+                        rights reserved by
+                        <a href="#">FastCoffe</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer copyright end-->
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Scripts -->
+    <!--jQuery-->
+<script src="https://prolex.themetags.com/js/jquery-3.4.1.min.js"></script>
+<!--Popper js-->
+<script src="https://prolex.themetags.com/js/popper.min.js"></script>
+<!--Bootstrap js-->
+<script src="https://prolex.themetags.com/js/bootstrap.min.js"></script>
+<!--Magnific popup js-->
+<script src="https://prolex.themetags.com/js/jquery.magnific-popup.min.js"></script>
+<!--jquery easing js-->
+<script src="https://prolex.themetags.com/js/jquery.easing.min.js"></script>
+<!--jquery ytplayer js-->
+<script src="https://prolex.themetags.com/js/jquery.mb.YTPlayer.min.js"></script>
+<!--wow js-->
+<script src="https://prolex.themetags.com/js/wow.min.js"></script>
+<!--owl carousel js-->
+<script src="https://prolex.themetags.com/js/owl.carousel.min.js"></script>
+<!--custom js-->
+<script src="https://prolex.themetags.com/js/scripts.js"></script>  
+</body>
+</html>
